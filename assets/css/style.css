@@ -574,3 +574,12 @@ button:focus {
   display: block;
   margin: 0 auto; /*Centers the image horizontally*/
 }
+.copy-rights {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
