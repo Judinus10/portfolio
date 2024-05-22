@@ -284,10 +284,12 @@ button:focus {
 .home-bg {
   background-image: url(../images/modern-2.jpg);
   background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
   position: relative;
-  display: flex;
+  display:flex;
   align-items: center;
+  
 }
 
 .home-table-center {
