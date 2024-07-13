@@ -45,7 +45,7 @@ html::-webkit-scrollbar-thumb{
   top: 0;
   left: 0;
   width: 100%;
-  padding: 3rem 9%;
+  padding: 3rem 2%; /*vertical & horizontal paddding */
   background: rgba(0,0,0,0.7);
   filter: drop-shadow(10px);
   display: flex;
@@ -66,14 +66,16 @@ html::-webkit-scrollbar-thumb{
   transform: scale(1.1);
 }
 
-.navbar{
+.navbar {
+  display: flex;
+  gap: 2rem; /* Adjust the value as needed for horizontal spacing */
   font-size: 1.8rem;
   color: var(--text-color);
-  margin-left: 4rem;
-  font-weight: 500;
+  font-weight: 700;
   transition: 0.3s ease;
   border-bottom: 3px solid transparent;
 }
+
 
 .navbar a:hover,
 .navbar a:active{
