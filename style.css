@@ -314,7 +314,10 @@ span{
 }
 
 .heading {
-
+  font-size: 5rem; /* Adjust the size as needed */
+  font-weight: 800;
+  color: var(--text-color); /* Or any color you prefer */
+  margin-bottom: 6rem; /* Space below the heading */
 }
 
  .service-container {  /*look for grid view of service later */
@@ -330,6 +333,7 @@ span{
   border-radius: 3rem;
   cursor: pointer;
   transition: 0.3s ease;
+  margin: 1rem;
 }
 
 .service-box:hover {
