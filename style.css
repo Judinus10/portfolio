@@ -324,16 +324,17 @@ span{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .service-box {
   background-color: var(--main-color);
-  height: 250px;
+  height: 200px;
   border-radius: 3rem;
   cursor: pointer;
   transition: 0.3s ease;
-  margin: 1rem;
+  margin: 1.5rem;
+  width: 95%;
 }
 
 .service-box:hover {
