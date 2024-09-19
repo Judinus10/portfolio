@@ -390,13 +390,15 @@ span{
 }
 
 .skills .container {
-  background: #e1352c37;
   color: var(--text-color);
-  border-radius: 1rem;
-  padding: 2rem;
-  width: 70px;
   margin: auto;
   margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem; 
+  width: 650px;
+  float: right;
 }
 
 .skills .container .row {
@@ -414,6 +416,11 @@ span{
   box-shadow: 0 4px 10px var(--main-color);
   transition: 0.3s ease;
   cursor: pointer;
+}
+
+.skills .container .bar img {
+  max-width: 100%;
+  height: auto;
 }
 
 .skills .container .bar:hover {
