@@ -19,8 +19,8 @@ Downloadable CV: Option to download my CV.
 
 Technologies Used
 Frontend: HTML, CSS, JavaScript
-Backend: [Specify if any backend is used]
-Frameworks: [List if any frameworks like Bootstrap, etc., were used]
+Backend: PHP
+Frameworks: Boostrap
 Version Control: GitHub for code management
 
 Installation
