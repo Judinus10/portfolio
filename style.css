@@ -363,7 +363,8 @@ span{
   font-size: 1.6rem;
   font-weight: 400;
   max-height: 100px;
-  margin: auto;
+  /* margin: auto; */
+  padding-left: 20%;
 }
 
 @media (max-width: 991px){
