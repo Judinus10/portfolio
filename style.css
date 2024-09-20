@@ -400,6 +400,7 @@ span{
   gap: 1rem; 
   width: 650px;
   float: right;
+  /* background-color:var(--second-bg-color); */
 }
 
 .skills .container .row {
@@ -578,6 +579,7 @@ span{
   font-weight: 500;
   color: #000000;
 }
+
 
 @media  screen and (max-width: 600px) {
   .education .timeline {
