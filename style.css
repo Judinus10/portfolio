@@ -580,6 +580,19 @@ span{
   color: #000000;
 }
 
+ul {
+  list-style-type: disc; 
+  padding-left: 20px; 
+  color: #000000;
+}
+
+ul ul {
+  list-style-type: square; 
+  padding-left: 20px; 
+  color: #000000;
+}
+
+
 
 @media  screen and (max-width: 600px) {
   .education .timeline {
