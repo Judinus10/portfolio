@@ -353,6 +353,11 @@ span{
   transform: scale(1.03);
 }
 
+.service-info:hover {
+  color: var(--main-color);
+  transform: scale(1.03);
+}
+
 .service-box .service-info {
   display: flex;
   flex-direction: column;
@@ -375,6 +380,19 @@ span{
   max-height: 100px;
   /* margin: auto; */
   padding-left: 20%;
+}
+
+.service-info a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  max-height: 100px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.service-box:hover .service-info a {
+  color: var(--main-color);
+  text-decoration: underline;
 }
 
 @media (max-width: 991px){
