@@ -466,8 +466,9 @@ span{
 }
 
 .skills .container .bar img {
-  max-width: 100%;
-  height: auto;
+    width: 100px; /* Set desired width */
+    height: 100px; /* Set desired height */
+    object-fit: cover; /* Maintains aspect ratio while filling the set dimensions */
 }
 
 .skills .container .bar:hover {
