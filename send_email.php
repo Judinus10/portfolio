@@ -1,20 +1,17 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get form data
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $phone = htmlspecialchars($_POST['phone']);
-    $subject = htmlspecialchars($_POST['subject']);
-    $message = htmlspecialchars($_POST['message']);
+    // Capture form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
-    // Email details
-    $to = "jjudinas@gmail.com";
-    $subject = "New Contact Form Submission: $subject";
-    $body = "Name: $name\nEmail: $email\nPhone: $phone\n\nMessage:\n$message";
-
-    // Email headers
+    // Set email parameters
+    $to = "jjudinas@gmail.com";  // Change this to your email address
+    $subject = "New Message from Contact Form";
+    $body = "Name: $name\nEmail: $email\nMessage: $message";
     $headers = "From: $email";
-    
+
+    // Send email
     if (mail($to, $subject, $body, $headers)) {
         echo "Message sent successfully!";
     } else {
