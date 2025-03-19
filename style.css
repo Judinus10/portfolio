@@ -411,6 +411,7 @@ span{
   text-decoration: underline;
 }
 
+
 @media (max-width: 991px){
   section {
     padding: 10rem 3% 2rem;
@@ -474,6 +475,7 @@ span{
 .skills .container .bar:hover {
   box-shadow: 0 4px 10px var(--main-color);
   transform: scale(1.03);
+  /* transition: 0.5s; */
 }
 
 .skills .container .bar .info {
