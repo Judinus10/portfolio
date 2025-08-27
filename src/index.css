@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Portfolio Design System - Light Theme Focus */
+
+@layer base {
+  :root {
+    /* Light theme - professional palette */
+    --background: 0 0% 99%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+    --card-glass: 0 0% 100% / 0.7;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 215 25% 15%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 210 15% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    --accent: 210 15% 93%;
+    --accent-foreground: 215 25% 15%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 215 25% 15%;
+
+    --radius: 1rem;
+
+    /* Accent Palettes */
+    --mist-50: 185 100% 97%;
+    --mist-100: 185 85% 92%;
+    --mist-500: 185 85% 55%;
+    --mist-600: 185 85% 45%;
+    --mist-gradient: linear-gradient(135deg, hsl(185 85% 55%), hsl(200 85% 55%), hsl(160 85% 55%));
+
+    --blossom-50: 320 100% 97%;
+    --blossom-100: 320 85% 92%;
+    --blossom-500: 320 85% 55%;
+    --blossom-600: 320 85% 45%;
+    --blossom-gradient: linear-gradient(135deg, hsl(320 85% 55%), hsl(300 85% 55%), hsl(340 85% 55%));
+
+    --sunrise-50: 35 100% 97%;
+    --sunrise-100: 35 85% 92%;
+    --sunrise-500: 35 85% 55%;
+    --sunrise-600: 35 85% 45%;
+    --sunrise-gradient: linear-gradient(135deg, hsl(35 85% 55%), hsl(20 85% 55%), hsl(340 85% 55%));
+
+    /* Shadows & Effects */
+    --shadow-glass: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    --shadow-card: 0 4px 16px 0 rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
+
+    /* Animation Variables */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Glass morphism effects */
+  .glass {
+    background: hsla(var(--card-glass));
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--border) / 0.2);
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glass-card {
+    @apply glass rounded-2xl;
+  }
+
+  /* Accent variants */
+  .accent-mist {
+    background: var(--mist-gradient);
+  }
+  
+  .accent-blossom {
+    background: var(--blossom-gradient);
+  }
+  
+  .accent-sunrise {
+    background: var(--sunrise-gradient);
+  }
+
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+}
+
+@layer components {
+  /* Enhanced button styles */
+  .btn-glass {
+    @apply glass px-6 py-3 rounded-xl font-medium transition-all duration-300;
+    @apply hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-hero {
+    @apply btn-glass bg-primary text-primary-foreground;
+    @apply hover:bg-primary/90;
+  }
+
+  .btn-secondary {
+    @apply btn-glass bg-secondary text-secondary-foreground;
+    @apply hover:bg-secondary/80;
+  }
+
+  /* Status indicators */
+  .status-success { @apply bg-emerald-100 text-emerald-700 border-emerald-200; }
+  .status-pending { @apply bg-amber-100 text-amber-700 border-amber-200; }
+  .status-failed { @apply bg-red-100 text-red-700 border-red-200; }
+}

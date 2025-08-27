@@ -12,9 +12,9 @@
 
 :root{
   --bg-colour:#c4c4c5;
-  --second-bg-color:#9e9d9d;
+  --second-bg-color:#faf7f7;
   --text-color:#020202;
-  --main-color:#7db74b;
+  --main-color:#7db74b;  /*7db74b*/
 }
 
 html{
